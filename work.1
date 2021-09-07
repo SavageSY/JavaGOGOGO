@@ -1,0 +1,25 @@
+package time;
+
+import java.util.Scanner;
+
+public class time1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//初始化
+		Scanner in = new Scanner(System.in);
+		int bjt = in.nextInt();
+		int utc = 0;
+		//输入北京时间
+		if(0<bjt && bjt<2359)
+		{
+			utc = bjt-800;
+			System.out.println(utc);
+		}
+		else
+		{
+			System.out.println("时间错误");
+		}
+	}
+
+}
